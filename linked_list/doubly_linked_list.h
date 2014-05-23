@@ -6,11 +6,10 @@
 
 typedef struct Node Node;
 typedef struct DoublyLinkedList DoublyLinkedList;
-typedef struct Iterator Iterator;
 
 void  append (DoublyLinkedList *dll, void *data);
 void *remove (DoublyLinkedList *dll, int index);
-void  insert (DoublyLinkedList *dll, void *data);
+void  insert (DoublyLinkedList *dll, int index, void *data);
 int   search (DoublyLinkedList *dll, void *data);
 
 #endif /* _DOUBLY_LINKED_LIST_H */
