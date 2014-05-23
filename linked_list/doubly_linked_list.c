@@ -50,6 +50,7 @@ void *remove (DoublyLinkedList *dll, int index) {
 				focus->prev->next = focus->next;
 				focus->next->prev = focus->prev;
 				data = focus->data;
+				break;
 			}
 			else {
 				focus = focus->next;
