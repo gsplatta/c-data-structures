@@ -7,7 +7,7 @@ typedef struct Node {
 	Node *prev;
 	Node *next;
 	void *data;
-} Node;
+} Node; 
 
 /*
  *
@@ -22,11 +22,18 @@ typedef struct DoublyLinkedList {
  *
  */
 void  append (DoublyLinkedList *dll, void *data) {
-	Node *temp = dll->tail;
-	Node  tail = { temp, NULL, data };
-	temp->next = &tail;
-	dll ->tail = &tail;
-	dll ->size = dll->size + 1;
+	if (data != NULL) {
+		if (dll->head != NULL) {
+			Node *temp = dll->tail;
+			Node  tail = { temp, NULL, data };
+			temp->next = &tail;
+			dll ->tail = &tail;
+		} else {
+			Node newhead = { NULL, NULL, data };
+			dll->head    = &newhead;
+		}
+		dll->size = dll->size + 1;
+	}
 };
 
 /*
@@ -44,8 +51,7 @@ void *remove (DoublyLinkedList *dll, int index) {
 				focus->next->prev = focus->prev;
 				data = focus->data;
 				break;
-			}
-			else {
+			} else {
 				focus = focus->next;
 			}		
 		}
@@ -80,13 +86,15 @@ void  insert (DoublyLinkedList *dll, int index, void *data) {
 };
 
 /*
- *	Returns -1 if the data is not found in the list; otherwise, returns the index of the data.
+ *	Returns -1 if the data is not found in the list or the data is NULL; 
+ *	otherwise, returns the index of the data.
+ *	
  */
 int   search (DoublyLinkedList *dll, void *data) {
-	int index = -1, i;
-	if (dll->size > 0) {
+	int index = -1;
+	if (dll->size > 0 && data != NULL) {
 		Node *focus = dll->head;
-		for (i = 0; i < dll->size; i++) {
+		for (int i = 0; i < dll->size; i++) {
 			if (focus->data == data) {
 				index = i;
 				break;
@@ -97,6 +105,3 @@ int   search (DoublyLinkedList *dll, void *data) {
 	return index;
 };
 
-int main(int argc, char *argv[]) {
-	return 0;
-}

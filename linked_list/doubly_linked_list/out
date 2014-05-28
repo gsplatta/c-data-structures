@@ -1,0 +1,225 @@
+make: option requires an argument -- 'f'
+Usage: make [options] [target] ...
+Options:
+  -b, -m                      Ignored for compatibility.
+  -B, --always-make           Unconditionally make all targets.
+  -C DIRECTORY, --directory=DIRECTORY
+                              Change to DIRECTORY before doing anything.
+  -d                          Print lots of debugging information.
+  --debug[=FLAGS]             Print various types of debugging information.
+  -e, --environment-overrides
+                              Environment variables override makefiles.
+  -f FILE, --file=FILE, --makefile=FILE
+                              Read FILE as a makefile.
+  -h, --help                  Print this message and exit.
+  -i, --ignore-errors         Ignore errors from commands.
+  -I DIRECTORY, --include-dir=DIRECTORY
+                              Search DIRECTORY for included makefiles.
+  -j [N], --jobs[=N]          Allow N jobs at once; infinite jobs with no arg.
+  -k, --keep-going            Keep going when some targets can't be made.
+  -l [N], --load-average[=N], --max-load[=N]
+                              Don't start multiple jobs unless load is below N.
+  -L, --check-symlink-times   Use the latest mtime between symlinks and target.
+  -n, --just-print, --dry-run, --recon
+                              Don't actually run any commands; just print them.
+  -o FILE, --old-file=FILE, --assume-old=FILE
+                              Consider FILE to be very old and don't remake it.
+  -p, --print-data-base       Print make's internal database.
+  -q, --question              Run no commands; exit status says if up to date.
+  -r, --no-builtin-rules      Disable the built-in implicit rules.
+  -R, --no-builtin-variables  Disable the built-in variable settings.
+  -s, --silent, --quiet       Don't echo commands.
+  -S, --no-keep-going, --stop
+                              Turns off -k.
+  -t, --touch                 Touch targets instead of remaking them.
+  -v, --version               Print the version number of make and exit.
+  -w, --print-directory       Print the current directory.
+  --no-print-directory        Turn off -w, even if it was turned on implicitly.
+  -W FILE, --what-if=FILE, --new-file=FILE, --assume-new=FILE
+                              Consider FILE to be infinitely new.
+  --warn-undefined-variables  Warn when an undefined variable is referenced.
+
+This program built for x86_64-pc-linux-gnu
+Report bugs to <bug-make@gnu.org>
+
+# Make data base, printed on Sun May 25 15:45:48 2014
+
+# Variables
+
+# environment
+SELINUX_INIT = YES
+# environment
+DESKTOP_SESSION = kde-plasma
+# environment
+KONSOLE_DBUS_WINDOW = /Windows/1
+# environment
+UPSTART_INSTANCE = 
+# environment
+GTK_RC_FILES = /etc/gtk/gtkrc:/home/geoffrey/.gtkrc:/home/geoffrey/.kde/share/config/gtkrc
+# environment
+XAUTHORITY = /tmp/kde-geoffrey/xauth-1000-_0
+# environment
+GDMSESSION = kde-plasma
+# environment
+SHELL = /bin/bash
+# environment
+GDM_LANG = en_US
+# environment
+_ = /usr/bin/make
+# environment
+XDG_CONFIG_DIRS = /etc/xdg/xdg-kde-plasma:/usr/share/upstart/xdg:/etc/xdg
+# environment
+SESSIONTYPE = 
+# environment
+MANDATORY_PATH = /usr/share/gconf/kde-plasma.mandatory.path
+# environment
+XDG_DATA_DIRS = /usr/share:/usr/share/kde-plasma:/usr/local/share/:/usr/share/
+# environment
+DBUS_SESSION_BUS_ADDRESS = unix:abstract=/tmp/dbus-2JvKeKF8pg
+# environment
+QT_PLUGIN_PATH = /home/geoffrey/.kde/lib/kde4/plugins/:/usr/lib/kde4/plugins/
+# environment
+USER = geoffrey
+# environment
+XDG_SESSION_PATH = /org/freedesktop/DisplayManager/Session0
+# environment
+PATH = /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/jvm/java-8-oracle/bin:/usr/lib/jvm/java-8-oracle/db/bin:/usr/lib/jvm/java-8-oracle/jre/bin
+# environment
+XCURSOR_THEME = oxy-white
+# environment
+UPSTART_JOB = startkde
+# environment
+SESSION_MANAGER = local/geoffrey-K54C:@/tmp/.ICE-unix/2521,unix/geoffrey-K54C:/tmp/.ICE-unix/2521
+# environment
+XDG_RUNTIME_DIR = /run/user/1000
+# environment
+SSH_AGENT_LAUNCHER = upstart
+# environment
+WINDOWID = 44040218
+# environment
+UBUNTU_MENUPROXY = 1
+# environment
+KONSOLE_PROFILE_NAME = Shell
+# environment
+GTK2_RC_FILES = /etc/gtk-2.0/gtkrc:/home/geoffrey/.gtkrc-2.0:/home/geoffrey/.kde/share/config/gtkrc-2.0
+# environment
+PROFILEHOME = 
+# default
+.FEATURES := target-specific order-only second-expansion else-if archives jobserver check-symlink
+# environment
+SESSION = kde-plasma
+# environment
+XDG_GREETER_DATA_DIR = /var/lib/lightdm-data/geoffrey
+# environment
+JOB = dbus
+# environment
+SSH_AUTH_SOCK = /tmp/ssh-WmX8QfnoieXu/agent.2401
+# environment
+DISPLAY = :0
+# environment
+PWD = /home/geoffrey/c-data-structures/linked_list/doubly_linked_list
+# environment
+KDE_SESSION_VERSION = 4
+# environment
+XDG_SEAT = seat0
+# environment
+SSH_AGENT_PID = 2424
+# environment
+GTK_MODULES = overlay-scrollbar:unity-gtk-module
+# environment
+HOME = /home/geoffrey
+# environment
+J2REDIR = /usr/lib/jvm/java-8-oracle/jre
+# environment
+PAM_KWALLET_LOGIN = /tmp//geoffrey.socket
+# environment
+LOGNAME = geoffrey
+# environment
+J2SDKDIR = /usr/lib/jvm/java-8-oracle
+# environment
+KDE_FULL_SESSION = true
+# environment
+XDG_VTNR = 7
+# environment
+KONSOLE_DBUS_SESSION = /Sessions/1
+# environment
+QT_IM_MODULE = maliitphablet
+# environment
+SHLVL = 1
+# environment
+JAVA_HOME = /usr/lib/jvm/java-8-oracle
+# environment
+XDG_SESSION_ID = c2
+# environment
+KDE_MULTIHEAD = false
+# environment
+XDG_CURRENT_DESKTOP = KDE
+# environment
+UPSTART_EVENTS = started xsession
+# environment
+GNOME_KEYRING_PID = 2345
+# environment
+OLDPWD = /home/geoffrey/c-data-structures/linked_list
+# default
+.VARIABLES := 
+# environment
+LANGUAGE = en_US
+# environment
+XDG_SEAT_PATH = /org/freedesktop/DisplayManager/Seat0
+# environment
+GNOME_KEYRING_CONTROL = /run/user/1000/keyring-Q4GjOj
+# environment
+SHELL_SESSION_ID = 237c306afc8b400094f5b14486710058
+# environment
+COLORFGBG = 15;0
+# environment
+DEFAULTS_PATH = /usr/share/gconf/kde-plasma.default.path
+# environment
+UPSTART_SESSION = unix:abstract=/com/ubuntu/upstart-session/1000/2353
+# environment
+INSTANCE = 
+# environment
+GS_LIB = /home/geoffrey/.fonts
+# environment
+KONSOLE_DBUS_SERVICE = :1.1173
+# environment
+DERBY_HOME = /usr/lib/jvm/java-8-oracle/db
+# environment
+LANG = en_US.UTF-8
+# environment
+TERM = xterm
+# environment
+KDE_SESSION_UID = 1000
+# variable set hash-table stats:
+# Load=72/1024=7%, Rehash=0, Collisions=4/79=5%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+
+# No files, no impossibilities in 0 directories.
+
+# Implicit Rules
+
+# No implicit rules.
+
+# Files
+
+# files hash-table stats:
+# Load=0/1024=0%, Rehash=0, Collisions=0/0=0%
+# VPATH Search Paths
+
+# No `vpath' search paths.
+
+# No general (`VPATH' variable) search path.
+
+# # of strings in strcache: 0
+# # of strcache buffers: 0
+# strcache size: total = 0 / max = 0 / min = 4096 / avg = 0
+# strcache free: total = 0 / max = 0 / min = 4096 / avg = 0
+
+# Finished Make data base on Sun May 25 15:45:48 2014
+

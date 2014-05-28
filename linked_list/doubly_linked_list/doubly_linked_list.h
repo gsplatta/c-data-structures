@@ -4,8 +4,8 @@
 
 #include <stddef.h>
 
-typedef struct Node Node;
-typedef struct DoublyLinkedList DoublyLinkedList;
+typedef struct Node 		Node;
+typedef struct DoublyLinkedList	DoublyLinkedList;
 
 void  append (DoublyLinkedList *dll, void *data);
 void *remove (DoublyLinkedList *dll, int index);
